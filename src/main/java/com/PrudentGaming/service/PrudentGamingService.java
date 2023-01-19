@@ -14,4 +14,6 @@ public interface PrudentGamingService {
 
     public List<PrudentGamingModel> searchingBasisOnClientId(int clientId);
 
+    public List<PrudentGamingModel> searchingBasisOndate(String date);
+
 }

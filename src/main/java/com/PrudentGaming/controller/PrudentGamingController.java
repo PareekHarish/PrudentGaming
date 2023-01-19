@@ -42,5 +42,9 @@ public class PrudentGamingController {
         return new ResponseEntity<>(prudentGamingService.searchingBasisOnClientId(clientId), HttpStatus.OK);
     }
 
+    @GetMapping("/searchingOnDate")
+    public ResponseEntity<List<PrudentGamingModel>> searchingBasisOnDate(@RequestParam(name = "date") String date) {
+        return new ResponseEntity<>(prudentGamingService.searchingBasisOndate(date), HttpStatus.OK);
+    }
 
 }

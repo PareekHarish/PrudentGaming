@@ -18,5 +18,8 @@ public interface PrudentGamingRepo extends CrudRepository<PrudentGamingModel, In
 
     @Query(value = "select * from prudent_gaming where client_id = ?1", nativeQuery = true)
     public List<PrudentGamingModel> searchingBasisOnClientId(int clientId);
+
+    @Query(value = "select * from prudent_gaming where date = ?1", nativeQuery = true)
+    public List<PrudentGamingModel> searchingBasisOnDate(String date);
     
 }

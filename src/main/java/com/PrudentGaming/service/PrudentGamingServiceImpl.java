@@ -46,5 +46,10 @@ public class PrudentGamingServiceImpl implements PrudentGamingService {
     public List<PrudentGamingModel> searchingBasisOnClientId(int clientId) {
         return prudentGamingRepo.searchingBasisOnClientId(clientId);
     }
+
+    @Override
+    public List<PrudentGamingModel> searchingBasisOndate(String date) {
+        return prudentGamingRepo.searchingBasisOnDate(date);
+    }
     
 }
